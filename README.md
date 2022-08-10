@@ -2,7 +2,7 @@
 
 ## How to use?
 
-### Class
+#### Class
 
 ```html
 <script type="text/javascript" src="Immediate.class.min.js"></script>
@@ -13,7 +13,7 @@ Immediate.setImmediate((test) => {
 }, `test passed`);
 ```
 
-### Function
+#### Function
 
 ```html
 <script type="text/javascript" src="Immediate.function.min.js"></script>
@@ -24,9 +24,13 @@ setImmediate((test) => {
 }, `test passed`);
 ```
 ## Benefits
+
 ### Moving from setTimeout to setImmediate
+
 Immediate.js is based off of `setTimeout` ([Mozilla docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)), meaning that if you convert `setTimeout`/`setInterval` to `setImmediate`/`setImmediateInterval` (Minus the delay) it *should* work.
+
 ### Speed
+
 Theres a problem with `setTimeout`, most browsers cap the minimum time to 4ms
 
 > **[\-Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)**
@@ -47,4 +51,4 @@ Navigate to "releases" and just download the latest one, there ***shouldn't*** b
 
 <big>**OR**</big>
 
-Download either "[Immediate.class.min.js](https://github.com/DesMS/Immediate.js/blob/main/Immediate.class.min.js)" for the class file or "Immediate.function.min.js" for the function file.
+Download either "[Immediate.class.min.js](https://github.com/DesMS/Immediate.js/blob/main/Immediate.class.min.js)" for the class file or "[Immediate.function.min.js](https://github.com/DesMS/Immediate.js/blob/main/Immediate.function.min.js)" for the function file.
