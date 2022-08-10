@@ -29,7 +29,7 @@ Immediate.js is based off of `setTimeout` ([Mozilla docs](https://developer.mozi
 ### Speed
 Theres a problem with `setTimeout`, most browsers cap the minimum time to 4ms
 
-> \- **[Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)**
+> **[\-Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)**
 > 
 > *The first four times, the delay is approximately **0 milliseconds**, and after that it is approximately **4 milliseconds***
 
