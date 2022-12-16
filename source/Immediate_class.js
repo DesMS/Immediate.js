@@ -6,7 +6,7 @@ class Immediate {
 	static data2 = class {
 		static immediates = {};
 		static listeners = {};
-	}
+	};
 	/**
 	 * Immediates are cancelled using {@link Immediate.clearImmediate}.
 	 * @param {Function | undefined} handler
@@ -14,7 +14,6 @@ class Immediate {
 	 * @returns {number} The "Immediate" id.
 	 */
 	static setImmediate(handler = undefined ? Function() : undefined, ...args) {
-		console.log(args);
 		if (arguments.length < 1) {
 			throw new TypeError(`Failed to execute 'setImmediate' on '${this.constructor.name}': 1 argument required, but only 0 present`);
 		}
@@ -41,7 +40,7 @@ class Immediate {
 		window.addEventListener(`message`, a);
 		window.postMessage(`${enc}`, `*`);
 		return id;
-	}
+	};
 	/**
 	 * The global {@link Immediate.clearImmediate} method cancels a "Immediate" previously established by calling {@link Immediate.setImmediate}.
 	 * @param {Number | undefined} id
@@ -58,7 +57,7 @@ class Immediate {
 			delete this.data.listeners[id];
 		} catch (err) { };
 		return undefined;
-	}
+	};
 	/**
 	 * ImmediateIntervals are cancelled using {@link Immediate.clearImmediateInterval}.
 	 * @param {Function | undefined} handler
@@ -90,7 +89,7 @@ class Immediate {
 		window.addEventListener(`message`, a);
 		window.postMessage(`${enc}`, `*`);
 		return id;
-	}
+	};
 	/**
 	 * The global {@link Immediate.clearImmediateInterval} method cancels a "ImmediateInterval" previously established by calling {@link Immediate.setImmediateInterval}.
 	 * @param {Number | undefined} id
@@ -107,5 +106,5 @@ class Immediate {
 			delete Immediate.data2.listeners[id];
 		} catch (err) { };
 		return undefined;
-	}
-}
+	};
+};
